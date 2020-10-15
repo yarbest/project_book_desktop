@@ -65,7 +65,7 @@ p {
 }
 
 .page:nth-child(4) {
-    background-color: #32325f;
+    /* background-color: #32325f; */
 
     /* border: 1px solid; */
 }
@@ -247,7 +247,7 @@ a {
     font-size: 48px;
 }
 
-.book-info__details {
+.book-info__content {
     display: grid;
     /* grid-template-rows: 1fr; */
     grid-template-columns: repeat(4, 1fr);
@@ -255,15 +255,11 @@ a {
     /* border: 2px solid green; */
 }
 
-div[class^="book-info__detail_"] {
-    /* border: 1px solid blue; */
-}
-
-div[class^="book-info__detail_"] img {
+.content-item img {
     margin-bottom: 40px;
 }
 
-div[class^="book-info__detail_"] p {
+.content-item p {
     color: #525f7f;
     font-size: 16px;
 }
@@ -327,35 +323,6 @@ div[class^="book-info__detail_"] p {
 /* ---------------------------------------------------------------------- */
 
 .footer {
-    display: grid;
-    grid-template-rows: 1fr;
-    /* grid-template-columns: repeat(3, 22.7%); */
-    /* grid-template-columns: repeat(3, 1fr); */
-    grid-template-columns: repeat(3, 259px);
-    grid-template-columns: minmax(auto, 259px) minmax(auto, 259px) minmax(auto, 259px);
-
-    /* grid-column-gap: 11.6%; */
-    justify-content: space-between;
-    padding: 78px 0 104px 0;
-
-    color: #ffffff;
-    /* background-color: black; */
-}
-
-.footer__item {
-    /* flex-basis: 21.5%; */
-    /* flex-basis: 259px; */
-
-    /* border: 2px solid white; */
-}
-
-.footer__item p:first-of-type,
-.footer__item a:first-of-type {
-    margin-top: 34px;
-}
-
-.footer__item a {
-    color: white;
 }
 
 /* ---------------------------------------------------------------------- */
@@ -418,7 +385,7 @@ div[class^="book-info__detail_"] p {
         padding: 10px 15px;
     }
 
-    /* .book-info__details {
+    /* .book-info__content {
         grid-template-rows: 1fr;
         grid-template-columns: repeat(4, 1fr);
     } */
@@ -469,7 +436,7 @@ div[class^="book-info__detail_"] p {
         padding: 10px 15px;
     }
 
-    .book-info__details {
+    .book-info__content {
         grid-template-rows: 1fr 1fr;
         grid-template-columns: repeat(2, 40%);
 
@@ -482,15 +449,6 @@ div[class^="book-info__detail_"] p {
         grid-template-rows: repeat(3, 1fr);
         grid-template-columns: repeat(2, 1fr);
     }
-
-    .footer {
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-columns: minmax(auto, 259px);
-        justify-content: center;
-        grid-row-gap: 10px;
-
-        padding: 40px 0;
-    }
 }
 
 @media (max-width: 480px) {
@@ -502,7 +460,7 @@ div[class^="book-info__detail_"] p {
         подходит под определение: меньше 767 */
     }
 
-    .book-info__details {
+    .book-info__content {
         grid-template-rows: 1fr 1fr 1fr 1fr;
         grid-template-columns: repeat(1, 70%);
         justify-content: center;

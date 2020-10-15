@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Document</title>
         <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/style1.css" />
         <!-- <script
             src="https://rawcdn.githack.com/ArtMan-8/outline-prototype/e73da2a1ee9031564b56ed5d98541891f7123933/js/outline-control.js"
             defer
@@ -26,10 +27,10 @@
             </div>
         </div> -->
 
-        <div class="block">
+        <!-- <div class="block">
             в
             <p>Lorem ipsum dolor sit amet.</p>
-        </div>
+        </div> -->
 
         <div class="page">
             <div class="container">
@@ -78,16 +79,19 @@
                             <h2>Путь Фрилансера</h2>
                         </div>
 
-                        <div class="book-info__details">
-                            <div class="book-info__detail_1">
+                        <div class="book-info__content">
+                            <div class="book-info__content-item book-info__content-item_size_big">
                                 <img src="img/book-info__detail_1.svg" alt="Detail 1" />
                                 <p>
                                     Главного героя книги зовут Антон. Он работает обычным продавцом в спортивном магазине. Антон решает
                                     стать фрилансером и работать на себя. В этом ему помогает его наставник Дима.
                                 </p>
                             </div>
+                            <!-- book-info (блок) content-item (элемент) size (модификатор) big (значение модификатора) 
+                            Если добавляется модификатор, то он идет в отдельном класса, сначала идет класс с названием блока и элемента, 
+                            а потом класс с названием блока, элемента, и модификатора -->
 
-                            <div class="book-info__detail_2">
+                            <div class="book-info__content-item">
                                 <img src="img/book-info__detail_2.svg" alt="Detail 2" />
                                 <p>
                                     Сможет ли Антон освоить новую профессию и преодолеть все трудности, которые ждут его на этом пути? Ответ
@@ -95,7 +99,7 @@
                                 </p>
                             </div>
 
-                            <div class="book-info__detail_3">
+                            <div class="book-info__content-item">
                                 <img src="img/book-info__detail_3.svg" alt="Detail 3" />
                                 <p>
                                     Книга написана в формате истории, но разбираются в ней вполне реальные примеры из жизни фрилансеров:
@@ -103,7 +107,7 @@
                                 </p>
                             </div>
 
-                            <div class="book-info__detail_4">
+                            <div class="book-info__content-item">
                                 <img src="img/book-info__detail_4.svg" alt="Detail 4" />
                                 <p>
                                     Выпуск книги запланирован на конец весны 2019 года. Сейчас вы можете заказать печатный вариант с
@@ -161,27 +165,29 @@
         <!-- buyers -->
 
         <div class="page">
-            <div class="container">
-                <footer class="footer">
-                    <div class="footer__item requisites">
-                        <h3>Реквизиты</h3>
-                        <p>ИП Исламов Артем Данисович</p>
-                        <p>ИНН 026408036102</p>
-                        <p>ОГРНИП 318028000152678</p>
+            <footer class="footer">
+                <div class="container">
+                    <div class="footer__body">
+                        <div class="footer__item requisites">
+                            <h3>Реквизиты</h3>
+                            <p>ИП Исламов Артем Данисович</p>
+                            <p>ИНН 026408036102</p>
+                            <p>ОГРНИП 318028000152678</p>
+                        </div>
+                        <div class="footer__item information">
+                            <h3>Информация</h3>
+                            <a href="">Политика конфиденциальности</a>
+                            <a href="">Оферта сайта</a>
+                        </div>
+                        <div class="footer__item contacts">
+                            <h3>Контакты</h3>
+                            <a href="">book@islamov-artem.ru</a>
+                            <a href="">vk.com/aislam23</a>
+                            <a href="">t.me/aislam23</a>
+                        </div>
                     </div>
-                    <div class="footer__item information">
-                        <h3>Информация</h3>
-                        <a href="">Политика конфиденциальности</a>
-                        <a href="">Оферта сайта</a>
-                    </div>
-                    <div class="footer__item contacts">
-                        <h3>Контакты</h3>
-                        <a href="">book@islamov-artem.ru</a>
-                        <a href="">vk.com/aislam23</a>
-                        <a href="">t.me/aislam23</a>
-                    </div>
-                </footer>
-            </div>
+                </div>
+            </footer>
         </div>
         <!-- footer -->
 
