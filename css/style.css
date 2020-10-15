@@ -1,6 +1,5 @@
 * {
     box-sizing: border-box;
-    font-family: sans-serif;
 }
 
 body {
@@ -333,10 +332,7 @@ div[class^="book-info__detail_"] p {
     /* grid-template-columns: repeat(3, 22.7%); */
     /* grid-template-columns: repeat(3, 1fr); */
     grid-template-columns: repeat(3, 259px);
-    grid-template-columns: minmax(auto, 259px) minmax(auto, 259px) minmax(
-            auto,
-            259px
-        );
+    grid-template-columns: minmax(auto, 259px) minmax(auto, 259px) minmax(auto, 259px);
 
     /* grid-column-gap: 11.6%; */
     justify-content: space-between;
