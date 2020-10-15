@@ -24,6 +24,14 @@ $color-violet: #32325f
 body
     font-family: $font-all
 
+
+.book-info
+    &__content
+        &-item
+            img 
+                margin-bottom: 40px
+
+
 .buyers
     &__title
         margin-bottom: 50px
@@ -57,7 +65,7 @@ body
 
 @media (max-width: 767px)
     .footer
-        .footer__body
+        &__body
             grid-template-rows: 1fr 1fr 1fr
             grid-template-columns: minmax(auto, 259px)
             grid-row-gap: 10px

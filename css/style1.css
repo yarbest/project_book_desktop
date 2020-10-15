@@ -27,6 +27,10 @@ body {
   font-family: "Helvetica Neue";
 }
 
+.book-info__content-item img {
+  margin-bottom: 40px;
+}
+
 .buyers__title {
   margin-bottom: 50px;
 }
@@ -75,7 +79,7 @@ body {
 }
 
 @media (max-width: 767px) {
-  .footer .footer__body {
+  .footer__body {
     -ms-grid-rows: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
     -ms-grid-columns: minmax(auto, 259px);
